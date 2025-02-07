@@ -63,6 +63,7 @@ class IndexController extends Controller
         $videos = Video::inRandomOrder()->limit(8)->get();
         $images = Image::inRandomOrder()->limit(8)->get();
         $audios = Audio::inRandomOrder()->limit(8)->get();
+
         $features = Feature::all();
         $libraries = Library::all();
         $bulletins = News::inRandomOrder()->limit(10)->get();
