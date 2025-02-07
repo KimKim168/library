@@ -6,7 +6,7 @@
 /public/assets/images
 /public/assets/videos
 /public/assets/pdf
-/public/assets/audios
+/public/assets/audios   
 /public/manifest.json
 /storage/*.key
 /storage/app/livewire-tmp

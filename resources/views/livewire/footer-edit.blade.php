@@ -74,12 +74,12 @@
                     required autofocus placeholder="Name" />
                 <x-input-error :messages="$errors->get('name')" class="mt-2" />
             </div>
-            <div>
+            {{-- <div>
                 <x-input-label for="name_kh" :value="__('Name KH')" /><span class="text-red-500">*</span>
                 <x-text-input id="name_kh" class="block w-full mt-1" type="text" name="name_kh" wire:model='name_kh'
                     required autofocus placeholder="Name KH" />
                 <x-input-error :messages="$errors->get('name_kh')" class="mt-2" />
-            </div>
+            </div> --}}
             <div class="col-span-1">
                 <label for="copyright" class = 'mb-4 text-sm font-medium text-gray-600 dark:text-white'>
                    {{ __('Copy Right') }}
@@ -88,14 +88,14 @@
                     required autofocus placeholder="Copy Right" />
                 <x-input-error :messages="$errors->get('copyright')" class="mt-2" />
             </div>
-            <div class="col-span-1">
+            {{-- <div class="col-span-1">
                 <label for="copyright_kh" class = 'mb-4 text-sm font-medium text-gray-600 dark:text-white'>
                    {{ __('Copy Right KH') }}
                 </label>
                 <x-text-input id="copyright_kh" class="block w-full mt-1" type="text" name="copyright_kh" wire:model='copyright_kh'
                     required autofocus placeholder="Copy Right KH" />
                 <x-input-error :messages="$errors->get('copyright_kh')" class="mt-2" />
-            </div>
+            </div> --}}
             <!-- End Name -->
 
         </div>
@@ -186,10 +186,10 @@
             <x-input-label for="description" :value="__('Description')" />
             <textarea id="description" name="description" wire:model="description"></textarea>
         </div>
-        <div class="mb-5" wire:ignore>
+        {{-- <div class="mb-5" wire:ignore>
             <x-input-label for="description_kh" :value="__('Description KH')" />
             <textarea id="description_kh" name="description_kh" wire:model="description_kh"></textarea>
-        </div>
+        </div> --}}
 
         <div>
             @can('update setting')
